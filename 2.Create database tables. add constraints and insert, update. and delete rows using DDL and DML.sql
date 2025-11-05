@@ -10,15 +10,14 @@ CREATE TABLE Employees (
     FirstName VARCHAR(50) NOT NULL,       
     LastName VARCHAR(50) NOT NULL,
     Department VARCHAR(50),
-    Salary DECIMAL(10, 2) CHECK (Salary >= 0),  
-    HireDate DATE DEFAULT CURRENT_DATE      
+    Salary DECIMAL(10, 2) CHECK (Salary >= 0)     
 );
 
 -- Insert rows into the table using DML
-INSERT INTO Employees (EmployeeID, FirstName, LastName, Department, Salary, HireDate) 
+INSERT INTO Employees (EmployeeID, FirstName, LastName, Department, Salary) 
 VALUES 
-(1, 'John', 'Smith', 'IT', 60000.00, '2023-01-15'),
-(2, 'Jane', 'Doe', 'HR', 55000.00, '2023-02-20');
+(1, 'John', 'Smith', 'IT', 60000.00),
+(2, 'Jane', 'Doe', 'HR', 55000.00);
 
 -- Update rows based on condition using DML
 UPDATE Employees
