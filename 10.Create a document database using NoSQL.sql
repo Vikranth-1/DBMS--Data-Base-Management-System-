@@ -2,7 +2,7 @@
 // For local server, use in terminal:
 // mongo
 // For MongoDB Atlas or remote connection, use the given connection string format:
-// mongo "mongodb+srv://username:password@url.mongodb.net/test"
+// mongo "MongoDB Atlas Database URI with credentials"
 
 // Step 2: Use (or create) a database
 use DatabaseName;
